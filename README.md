@@ -16,8 +16,9 @@ Modify the stratumPort for listening and pool connection parameters
       "port" : 3956
     },
 
-Optionally, you may force all miners to use the specified wallet, miner authorizations ignored.
-By default it will use authorization from miner.
+By default, authorization from miner will be used to create pool connections for each.
+
+Optionally, you may force all miners to use the specified wallet, all miners will use same pool connection.
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
