@@ -16,7 +16,8 @@ Modify the stratumPort and pool parameters as needed
       "port" : 3956
     },
 
-Optionally, add the wallet and password parameters as needed
+Optionally, you may force all miners to use the specified proxy wallet and password. By default it will use authorization from miner.
+
     "wallet": "WALLET_ADDRESS",
     "password": "x"
 
