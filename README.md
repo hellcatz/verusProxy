@@ -6,9 +6,9 @@
     cd verusProxy
     npm install
 
-# Modify config.json
+# Custom Pool
 
-Modify the stratumPort for listening and pool connection parameters
+Modify the stratumPort for listening and pool connection parameters.
 
     "stratumPort": 8000,
     "pool" : {
