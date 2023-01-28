@@ -8,7 +8,7 @@
 
 # Modify config.json
 
-Modify the stratumPort and pool parameters as needed
+Modify the stratumPort for listening and pool connection parameters
 
     "stratumPort": 8000,
     "pool" : {
@@ -16,7 +16,8 @@ Modify the stratumPort and pool parameters as needed
       "port" : 3956
     },
 
-Optionally, you may force all miners to use the specified proxy wallet and password. By default it will use authorization from miner.
+Optionally, you may force all miners to use the specified wallet, miner authorizations ignored.
+By default it will use authorization from miner.
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
