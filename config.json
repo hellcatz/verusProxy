@@ -1,10 +1,7 @@
 {
     "stratumPort": 8000,
 	"pool" : {
-		"host" : "na.luckpool.net",
-		"port" : 3956
- 	},
-    "_wallet_help": "optional, force specific proxy wallet, ignore miner authorizations",
-    "_wallet": "WALLET_ADDRESS",
-    "password": "x"
+		"host" : "localhost",
+		"port" : 9999
+ 	}
 }
