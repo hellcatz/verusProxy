@@ -6,9 +6,8 @@
     cd verusProxy
     npm install
 
-# Custom Pool
-
-Modify the stratumPort for listening and pool connection parameters.
+# Configure
+Note, stratum port can not be the same as pool port.  
 
     "stratumPort": 8000,
     "pool" : {
@@ -16,8 +15,7 @@ Modify the stratumPort for listening and pool connection parameters.
       "port" : 3956
     },
 
-By default, authorization from miner will be used to create pool connections for each.
-
+By default, authorization from miner will be used to create pool connections for each.  
 Optionally, you may force all miners to use the specified wallet, all miners will use same pool connection.
 
     "wallet": "WALLET_ADDRESS",
@@ -25,10 +23,3 @@ Optionally, you may force all miners to use the specified wallet, all miners wil
 
 # Run
     node proxy.js
-    
-    VerusProxy v0.1 by hellcatz
-    Using 1 out of 1 total threads
-    Using pool: na.luckpool.net 3956
-    Stratum proxy listening on stratum+tcp port 8000
-
-
