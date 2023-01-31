@@ -8,7 +8,7 @@
     npm install
 
 # Configure
-Note, stratum port can not be the same as pool port.  
+**NOTE**: stratum port can not be the same as pool port.  
 
     "stratumPort": 8000,
     "pool" : {
@@ -17,7 +17,7 @@ Note, stratum port can not be the same as pool port.
     },
 
 By default, authorization from miner will be used to create pool connections for each.  
-Optionally, you may force all miners to use the specified wallet, all miners will use same pool connection.
+Optionally, you may force all miners to use the specified proxy wallet.
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
