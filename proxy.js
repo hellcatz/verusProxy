@@ -56,6 +56,10 @@ if (cluster.isMaster) {
     });
     //process.send({chat: "Hello master from worker!"});
 
+    if (!config.notifyTimeoutMs) {
+        config.notifyTimeoutMs = 15000;
+    }
+
     // start stratum mining server for this fork
     minerListener.createMiningListener(config);
 }
