@@ -1,5 +1,6 @@
 # verusProxy
-**Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.
+**Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
+**NOTE**: Only properly works with miners that support xnsub (extra nonce subscribe)
 
 # Setup
     git clone https://github.com/hellcatz/verusProxy
