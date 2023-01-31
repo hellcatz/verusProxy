@@ -1,7 +1,7 @@
 {
     "stratumPort": 8000,
 	"pool" : {
-		"host" : "localhost",
-		"port" : 9999
+		"host" : "na.luckpool.net",
+		"port" : 3956
  	}
 }

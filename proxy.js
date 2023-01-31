@@ -1,10 +1,10 @@
 const cluster = require("cluster");
-const totalCPUs = require("os").cpus().length - 1;
+const totalCPUs = require("os").cpus().length;
 const minerListener = require('./lib/miner_listener.js');
 
 const config = require('./config.json');
 
-config.version = 0.1;
+config.version = "0.1.1";
 
 // TODO, stratumProxy/poolConnection engine (50%)
 //       api/stats engine (0%)
