@@ -2,12 +2,12 @@
 **Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
 **NOTE**: Only properly works with miners that support xnsub (extra nonce subscribe)
 
-# Setup
+## Setup
     git clone https://github.com/hellcatz/verusProxy
     cd verusProxy
     npm install
 
-# Configure
+## Configure
 **NOTE**: stratum port can not be the same as pool port.  
 
     "stratumPort": 8000,
@@ -22,5 +22,5 @@ Optionally, you may force all miners to use the specified proxy wallet.
     "wallet": "WALLET_ADDRESS",
     "password": "x"
 
-# Run
+## Run
     node proxy.js
