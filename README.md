@@ -2,6 +2,7 @@
 **Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
 
 ## Setup
+    sudo apt install nodejs npm
     git clone https://github.com/hellcatz/verusProxy
     cd verusProxy
     npm install
