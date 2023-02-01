@@ -23,7 +23,7 @@ By default, authorization from miner will be used to create pool connections for
 This requires miner to support extra nonce subscription (xnsub) or will reult in low difficulty share rejects.  
 If the pool connection is lost, a new extra nonce will be assigned by the pool and sent to miners (xnsub)
   
-Optionally, you may force all miners to use the specified proxy wallet partially eliminating the xnsub requirement.  
+Optionally, you may force all miners to use the specified proxy wallet.  
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
