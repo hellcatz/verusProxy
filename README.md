@@ -19,7 +19,7 @@
 
 ### Miner Authorization
 By default, authorization from miner will be used to create pool connections for each unique miner address.  
-This mode requires the miner software to support extra nonce subscription (xnsub) or will reult in low difficulty share rejects.  
+This requires miner to support extra nonce subscription (xnsub) or will reult in low difficulty share rejects.  
   
 Optionally, you may force all miners to use the specified proxy wallet partially eliminating the xnsub requirement.  
 If the pool connection is lost, a new nonce will be assigned by the pool and will result in low difficulty share rejects, requiring miner to restart.  
