@@ -1,5 +1,6 @@
 # verusProxy
 **Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
+**NOTE**: It is best to use a miner that is compatible with extra nonce subscribe (xnsub) feature.
 
 ## Setup
     sudo apt install nodejs npm
@@ -8,7 +9,7 @@
     npm install
 
 ## Configure
-**NOTE**: stratum port can not be the same as pool port.  
+**NOTE**: stratum port can not be the same as pool port  
 
     "stratumPort": 8000,
     "pool" : {
@@ -16,8 +17,12 @@
       "port" : 3956
     }
 
-By default, authorization from miner will be used to create pool connections for each (requires xnsub support in miner software)  
-Optionally, you may force all miners to use the specified proxy wallet (does not require xnsub support in miner software)  
+### Miner Authorization
+By default, authorization from miner will be used to create pool connections for each unique miner address.  
+This mode requires the miner software to support extra nonce subscription (xnsub) or will reult in low difficulty share rejects.  
+  
+Optionally, you may force all miners to use the specified proxy wallet partially eliminating the xnsub requirement.  
+If the pool connection is lost, a new nonce will be assigned by the pool and will result in low difficulty share rejects, requiring miner to restart.  
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
