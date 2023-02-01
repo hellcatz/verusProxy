@@ -1,6 +1,5 @@
 # verusProxy
 **Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
-**NOTE**: Only properly works with miners that support xnsub (extra nonce subscribe) unless yous specify a proxy wallet.
 
 ## Setup
     git clone https://github.com/hellcatz/verusProxy
@@ -14,10 +13,10 @@
     "pool" : {
       "host" : "na.luckpool.net",
       "port" : 3956
-    },
+    }
 
-By default, authorization from miner will be used to create pool connections for each.  
-Optionally, you may force all miners to use the specified proxy wallet.
+By default, authorization from miner will be used to create pool connections for each (requires xnsub support in miner software)  
+Optionally, you may force all miners to use the specified proxy wallet (does not require xnsub support in miner software)  
 
     "wallet": "WALLET_ADDRESS",
     "password": "x"
