@@ -4,7 +4,7 @@ const minerListener = require('./lib/miner_listener.js');
 
 const config = require('./config.json');
 
-config.version = "0.1.2";
+config.version = "0.1.3";
 
 // TODO, stratumProxy/poolConnection engine (50%)
 //       api/stats engine (0%)
