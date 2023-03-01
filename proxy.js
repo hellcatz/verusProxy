@@ -4,7 +4,7 @@ const minerListener = require('./lib/miner_listener.js');
 
 const config = require('./config.json');
 
-config.version = "0.1.3";
+config.version = "0.1.4";
 
 // TODO, stratumProxy/poolConnection engine (50%)
 //       api/stats engine (0%)
@@ -62,4 +62,6 @@ if (cluster.isMaster) {
 
     // start stratum mining server for this fork
     minerListener.createMiningListener(config);
+    
+    // TODO, monitor ssl certificates for updates and udpdate our listener's TLS options ...
 }
