@@ -1,7 +1,7 @@
 # verusProxy
 **Experimental** stratum proxy for VerusCoin based mining pools. This is currently work in progress.  
   
-Proxy requires miner to support extra nonce subscription (xnsub) or will result in mostly low difficulty share rejects over time.  
+Proxy requires miner to support extra nonce subscription (xnsub) or will result in mostly low difficulty rejects.  
 If the pool connection is lost, a new extra nonce will be assigned by the pool and sent to miners (xnsub)  
   
 ## Setup
